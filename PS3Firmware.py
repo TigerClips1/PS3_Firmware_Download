@@ -1,8 +1,8 @@
-#!/bin/env/python
+#!/bin/env python3
 import os
 import webbrowser
 
-class PS3FirMware:
+def PS3_firmware():
     PS3_Firmware_489 = "wget https://archive.org/download/ps3-official-firmwares/Firmware%204.89/PS3UPDAT.PUP"
     PS3_Firmware_488 = "wget https://archive.org/download/ps3-official-firmwares/Firmware%204.88/PS3UPDAT.PUP"		 
     PS3_Firmware_487 = "wget https://archive.org/download/ps3-official-firmwares/Firmware%204.87/PS3UPDAT.PUP"
@@ -19,7 +19,7 @@ class PS3FirMware:
     PS3_Firmware_466 = webbrowser.open_new_tab("https://mega.co.nz/#!9IoDWYLR!-dfv7dS9IKGhi9CUpAiB7IvXaD6qk2RHim45RS5g634")		
     PS3_Firmware_465 = webbrowser.open_new_tab("https://mega.co.nz/#!kA5zzKrR!OmsMUXQn7jew8fJSlMMlIjS55N5P1qrvzOAaQKJurOQ")		
     PS3_Firmware_460 = webbrowser.open_new_tab("https://mega.co.nz/#!tdwFkSKQ!K8l7UmZJ9cCSO9ka_CRAxiOAncMGa9lfl8S8CIak_Xs")		
-    PS3_Firmware_455 = webbrowser.open_new_tab("https://mega.co.nz/#!VRwhBYrJ!DzFJyzvqqbExQks6_TSV4nZ9tFYezkdKWKgiddgwHZI")		
+    PS3_Firmware_455 = webbrowser.open_new_tab("https://mega.co.nz/#!VRwhBYrJ!DzFJyzvqqbExQks6_TSV4nZ9tFYezkdKWKgiddgwHZI") #16 start		
     PS3_Firmware_453 = webbrowser.open_new_tab("https://mega.co.nz/#!xNpBXAAS!bkBVJShilIwaGCnOE2yMH1VZBlF77lCpPIQzBjYdpO8")		
     PS3_Firmware_450 = webbrowser.open_new_tab("https://mega.co.nz/#!0QgzDAAT!Do1jOHdX6-NFyWz4h2U2uwIH370hA34ZMDjyAbKqk1E")	
     PS3_Firmware_446 = webbrowser.open_new_tab("https://mega.co.nz/#!YFpVCK6L!UVfD-37kxOeTwZCZq78FMngFXDFDwZpyxTgIGeqP71U")	
@@ -34,8 +34,8 @@ class PS3FirMware:
     PS3_Firmware_411 = webbrowser.open_new_tab("https://mega.co.nz/#!NN41WCSJ!aWbGH2oi_IzLoS4FpZ1fBQlNuXxVR9XwhOalubaoQx0")
     PS3_Firmware_410 = webbrowser.open_new_tab("https://mega.co.nz/#!5YxRgIoT!AanTVEDliRiZd0dtYVAztwusKOQxETPfmZTV1HeHd3g")		
     PS3_Firmware_400 = webbrowser.open_new_tab("https://mega.co.nz/#!kFxnhQQQ!JDKsskfh5EO01rITogVJXQTIf4ci3OCS5TQMM-R6vGE")
-    PS3_Firmware_374 = webbrowser.open_new_tab("https://mega.co.nz/#!kcxB1A5A!Vuv04GXwT13WdoqA3tNLH3zpnAtv02aj-rFajfcdz5s")
-    PS3_Firmware_373 = webbrowser.open_new_tab("https://mega.co.nz/#!5YplwSxK!D_L5qm2SVoPUaX8GAECV2xf4-aEsJkCVlT0PsDcng6Q")
+    PS3_Firmware_374 = webbrowser.open_new_tab("https://mega.co.nz/#!kcxB1A5A!Vuv04GXwT13WdoqA3tNLH3zpnAtv02aj-rFajfcdz5s") #16 2
+    PS3_Firmware_373 = webbrowser.open_new_tab("https://mega.co.nz/#!5YplwSxK!D_L5qm2SVoPUaX8GAECV2xf4-aEsJkCVlT0PsDcng6Q") #16 3 start
     PS3_Firmware_372 = webbrowser.open_new_tab("https://mega.co.nz/#!NFx3TCrQ!C5v1bxrrC0TEYtz4QMO8On6DVFNoaaoY7IrmQl7j_RA")
     PS3_Firmware_370 = webbrowser.open_new_tab("https://mega.co.nz/#!kJgVxIBJ!NMscJ3jZP2ZcRBhgRhryKXqEshUgY4a6JiTsrVg_hcU")		
     PS3_Firmware_366 = webbrowser.open_new_tab("https://mega.co.nz/#!0JhFVajI!dPmfVXY_jBcC490nddzPEiqWU1dZpbsYKdClVnqMJwk")	
@@ -51,41 +51,41 @@ class PS3FirMware:
     PS3_Firmware_341_v1 = webbrowser.open_new_tab("https://mega.co.nz/#!QZhBCADL!VHM4BlQH-_TTIzaoxrH7IWkSjno5uXsI1BleoLyInlQ")			
     PS3_Firmware_340 = webbrowser.open_new_tab("https://mega.co.nz/#!sd4ngCBK!BTSkaXQ81GENtCG-jN_oeU-zAxwEqHjiQ44w_vCJ9F4")	
     PS3_Firmware_330 = webbrowser.open_new_tab("https://mega.co.nz/#!lQphia4A!XH9GFUQzZFjYYGcm-TUz7n_e8zJIY9Ra9cQXbJWNqBA")	
-    PS3_Firmware_321 = webbrowser.open_new_tab("https://mega.co.nz/#!VB4F0CTQ!S-0SkQY0f8Zmtfc4Nrx6awfjOqkBxN8UFFVCXEnicck")	
-    PS3_Firmware_316 = webbrowser.open_new_tab("https://mega.co.nz/#!Rd4zRYzL!xXinxLgWFG8McLYyL9EmERXvGGUZxzn4rQsRZJPW-aw")	
+    PS3_Firmware_321 = webbrowser.open_new_tab("https://mega.co.nz/#!VB4F0CTQ!S-0SkQY0f8Zmtfc4Nrx6awfjOqkBxN8UFFVCXEnicck") #16 3 end	
+    PS3_Firmware_316 = webbrowser.open_new_tab("https://mega.co.nz/#!Rd4zRYzL!xXinxLgWFG8McLYyL9EmERXvGGUZxzn4rQsRZJPW-aw")	#16 4 start
     PS3_Firmware_315 = webbrowser.open_new_tab("https://mega.co.nz/#!scw33KRJ!cJLkowoXHNheik8xx2GGaWO-HiQBJw9tddcGfKwi7zo")		
     PS3_Firmware_310 = webbrowser.open_new_tab("https://mega.co.nz/#!EFphDSbQ!P6kRGDxh7AT3YtFX2ASixFnHEf91HBLRtqqAcvpuKME")		
     PS3_Firmware_301 = webbrowser.open_new_tab("https://mega.co.nz/#!MJ4lTCAA!WGBkZyyT0BAn3H3aTc5ctX8-nV12gwy5DMHiNwPOTgM")	
     PS3_Firmware_300 = webbrowser.open_new_tab("https://mega.co.nz/#!9QhniKZK!PttFVQ-Qn3AeMyMB12Z-4yeKFMBpBZWeKFZhJIaux8U")	
     PS3_Firmware_280 = webbrowser.open_new_tab("https://mega.co.nz/#!YJgT3Q4B!ULWc8i3unObnD8wYfTol4DtWqQsTZ2DQ_q7nPDp2mGQ")		
     PS3_Firmware_276 = webbrowser.open_new_tab("https://mega.co.nz/#!tIhhGI7I!cWsU7XTD3AQcQg_c7TbE1i2ZPRF847oDbDGx2pwAg5A")		
-    PS3_Firmware_270 = webbrowser.open_new_tab("")	
-    PS3_Firmware_260 = webbrowser.open_new_tab("")		
-    PS3_Firmware_253 = webbrowser.open_new_tab("")		
-    PS3_Firmware_252 = webbrowser.open_new_tab("")
-    PS3_Firmware_250 = webbrowser.open_new_tab("")	
-    PS3_Firmware_243 = webbrowser.open_new_tab("")	
-    PS3_Firmware_242 = webbrowser.open_new_tab("")		
-    PS3_Firmware_241 = webbrowser.open_new_tab("")	
-    PS3_Firmware_240 = webbrowser.open_new_tab("")		
-    PS3_Firmware_236 = webbrowser.open_new_tab("")	
-    PS3_Firmware_235 = webbrowser.open_new_tab("")		
-    PS3_Firmware_230 = webbrowser.open_new_tab("")	
-    PS3_Firmware_220 = webbrowser.open_new_tab("")	
-    PS3_Firmware_217 = webbrowser.open_new_tab("")		
-    PS3_Firmware_216 = webbrowser.open_new_tab("")	
-    PS3_Firmware_210 = webbrowser.open_new_tab("")	
-    PS3_Firmware_201 = webbrowser.open_new_tab("")	
-    PS3_Firmware_200 = webbrowser.open_new_tab("")	
-    PS3_Firmware_194 = webbrowser.open_new_tab("")		
-    PS3_Firmware_193 = webbrowser.open_new_tab("")	
-    PS3_Firmware_192 = webbrowser.open_new_tab("")	
-    PS3_Firmware_190 = webbrowser.open_new_tab("")		
-    PS3_Firmware_182 = webbrowser.open_new_tab("")		
-    PS3_Firmware_181 = webbrowser.open_new_tab("")		
-    PS3_Firmware_180 = webbrowser.open_new_tab("")		
-    PS3_Firmware_170 = webbrowser.open_new_tab("")
-    PS3_Firmware_160 = webbrowser.open_new_tab("")		
+    PS3_Firmware_270 = webbrowser.open_new_tab("https://mega.co.nz/#!VI5HnYIZ!a5d0cn7CaJKn3DYWFPLBZS4RbkQJIu8u0-FeTlzxX0M")	
+    PS3_Firmware_260 = webbrowser.open_new_tab("https://mega.co.nz/#!YYhllAIT!aeYslmfRaUqLA3iyIYsi0gYzpIAUtNooqSmYtzGw_oI")		
+    PS3_Firmware_253 = webbrowser.open_new_tab("https://mega.co.nz/#!pBhlXIwT!IwsdnVl_az_a5fOZeXvqeHYjIeYVvNHutJnPPkgCFaw")		
+    PS3_Firmware_252 = webbrowser.open_new_tab("https://mega.co.nz/#!dBgHWIRA!bo-eYjlLOI5VNbhOrINiQgo0EI59ovtEeTs-kq_9024")
+    PS3_Firmware_250 = webbrowser.open_new_tab("https://mega.co.nz/#!0AoBjaQT!ST_iqUSQ_FHONgTKp9SXD1NH84Bcg9VPk2Iz2u25Zqk")	
+    PS3_Firmware_243 = webbrowser.open_new_tab("https://mega.co.nz/#!AV53nS6b!HAtPuyZ4VJ4cHTNowjGCYBswDBMNbtV7WYl6Qf3M65Y")	
+    PS3_Firmware_242 = webbrowser.open_new_tab("https://mega.co.nz/#!5IohECCJ!XNvpNitmHEk7xgYSHk2lLxvlsawPfgClKv4C8i3ZInI")		
+    PS3_Firmware_241 = webbrowser.open_new_tab("https://mega.co.nz/#!oZwnEaSQ!NUFeJCHOzKPq1kwlu0IfkxGgizlDY3ca5pqmbbceTsU") 	
+    PS3_Firmware_240 = webbrowser.open_new_tab("https://mega.co.nz/#!0BpHwaZZ!eWRe6mGnUEfOZsDBdCFz41N-N5shIutCiXraih-kVp4")	#16 4 end
+    PS3_Firmware_236 = webbrowser.open_new_tab("https://mega.co.nz/#!gRgDlYQQ!I6XpAUGapTGCz84sc1hFOjgBVhg7b2iE5OTyNDI11rk")	#16 5 start	
+    PS3_Firmware_235 = webbrowser.open_new_tab("https://mega.co.nz/#!wUwnmQAK!PV47ak8u2ZzGnKlOJGda-A6wqZcI8eX1wtE5RkwFVlI")		
+    PS3_Firmware_230 = webbrowser.open_new_tab("https://mega.co.nz/#!JQwB2CiR!TaKuNSBdJxYCIzohPY3j-WC8D95byYHYEtBlkGr_BBQ")	
+    PS3_Firmware_220 = webbrowser.open_new_tab("https://mega.co.nz/#!pYp12IpJ!NMk7sA13YocZvd9t7nvlqUAkSV9ETNlcW7nyhJ2juEc")	
+    PS3_Firmware_217 = webbrowser.open_new_tab("https://mega.co.nz/#!8MhXHIhY!CQ_d9AeS_vjsHHaKa8xj2GoNsjIYOYE5-NubR3OxROI")		
+    PS3_Firmware_216 = webbrowser.open_new_tab("https://mega.co.nz/#!8VhhFCQT!fMnLkVZKC0LIXdReVbokEFLYlsJT2XQVvpC6uj_s1fA")	
+    PS3_Firmware_210 = webbrowser.open_new_tab("https://mega.co.nz/#!dN5hwaLY!HcXk43Ue6ywW4PigCJXX5DO24IdsgecWOKbFZQM8Bgg")	
+    PS3_Firmware_201 = webbrowser.open_new_tab("https://mega.co.nz/#!5I5jSYAb!bBL4NRWUh3yKwguwdZGblnhCxGVeWUt89L7BZGjl6pI")	
+    PS3_Firmware_200 = webbrowser.open_new_tab("https://mega.co.nz/#!UQhRzKAA!fePQCld72-S5_qC-geeR1GHbabJpnvoj3T0qHPjI1OM")	
+    PS3_Firmware_194 = webbrowser.open_new_tab("https://mega.co.nz/#!VIh3ACQI!Vd0cNDyWlGH1nPjFL9-xJHERyQhg_6ROra6k4U4TdVc")		
+    PS3_Firmware_193 = webbrowser.open_new_tab("https://mega.co.nz/#!FJojGAaZ!T6Vg-jJ2elBOF2gw_O8riQtH4L8YtmCXVPqUk6EFYAQ")	
+    PS3_Firmware_192 = webbrowser.open_new_tab("https://mega.co.nz/#!4B411QpT!KuOJvGjLvfD8olkEoR_bDDpUU-ZWrEnntfBiAug8MLs")	
+    PS3_Firmware_190 = webbrowser.open_new_tab("https://mega.co.nz/#!0NpzWQ7S!T_V1amWyWSxUY1iy_iO1oFGjKz595ulqNurSaZReyGY")		
+    PS3_Firmware_182 = webbrowser.open_new_tab("https://mega.co.nz/#!dUhlRKJS!P-k70Cva8IFpaiHpExoQ9VSqCrI0N9Y4baFPxAZbgA4")		
+    PS3_Firmware_181 = webbrowser.open_new_tab("https://mega.co.nz/#!URp3DY4b!I_hn2Sgka33XMdbcCAJHtHVYAckDkYFW9DuB60oN7L4")	
+    PS3_Firmware_180 = webbrowser.open_new_tab("https://mega.co.nz/#!lZxVQYAA!b5r250r2q24gbqabKD14MRGdI7phEn0gc1f_l0LdCIY") #16 5 end	
+    PS3_Firmware_170 = webbrowser.open_new_tab("https://mega.co.nz/#!dIxBSYZZ!apiiSxijK_7jZOueaZ2u5k7YdNNsiIxWyg5-izZ3NnY") #16 6 start	
+    PS3_Firmware_160 = webbrowser.open_new_tab("https://mega.co.nz/#!ddhhmaaQ!Z8L2qihvIhFBj5I5OegswBYzFB0qx_E5d_CnojJ1m2E")		
     PS3_Firmware_154 = webbrowser.open_new_tab("https://mega.co.nz/#!McwHhYKC!dCcYKXmTLK5o5cNnRy9-9h06vbZhW-uILn36bhnb6N8")	
     PS3_Firmware_151 = webbrowser.open_new_tab("https://mega.co.nz/#!VZwHXIhI!MyYMtDeVPdDQvkWQhzp7wWkTLjcHzGEXr-wDiPkzUZM")		
     PS3_Firmware_150 = webbrowser.open_new_tab("https://mega.co.nz/#!1BwTgCyA!JLUTwBQzpoI_TXWQNeJ_rEa34_hEK4Z1XHlIDmZmbCg")	
@@ -93,4 +93,6 @@ class PS3FirMware:
     PS3_Firmware_130 = webbrowser.open_new_tab("https://mega.co.nz/#!BEhRFAZa!eslZbGb2c_XlHmIwH-d80ycaAzZKhlHqmqWCwg-u4xk")	
     PS3_Firmware_111 = webbrowser.open_new_tab("https://mega.co.nz/#!4Z4x1KCI!C41l0FXA5gvUxiDaA7JZTCPvLPQxILMt8I0dbgY1Gfc")		
     PS3_Firmware_110 = webbrowser.open_new_tab("https://mega.co.nz/#!ZdwV0AYA!dyKSR1_ZhH4ET3YJLKS8K2h3Gc5EDfP1OLIQ-ixu4LU")		
-    PS3_Firmware_102 = webbrowser.open_new_tab("https://mega.co.nz/#!EAojxIpC!INIPyGyLPZul5SfmzX8COG4b0WRL6Lnn5gqneKQWT8A")
+    PS3_Firmware_102 = webbrowser.open_new_tab("https://mega.co.nz/#!EAojxIpC!INIPyGyLPZul5SfmzX8COG4b0WRL6Lnn5gqneKQWT8A") #16 6 end
+
+PS3_firmware()
