@@ -3,13 +3,13 @@ import os
 import webbrowser
 
 class PS3:
-        PS3_Firmware_489 = "wget https://archive.org/download/ps3-official-firmwares/Firmware%204.89/PS3UPDAT.PUP"
-        PS3_Firmware_488 = "wget https://archive.org/download/ps3-official-firmwares/Firmware%204.88/PS3UPDAT.PUP"
-        PS3_Firmware_487 = "wget https://archive.org/download/ps3-official-firmwares/Firmware%204.87/PS3UPDAT.PUP"
-        PS3_Firmware_486 = "https://mega.nz/file/ldAliKJC#kh2Ja4kIPTnV-cxAQ1B-C-d_1FSRJn1HIvdPzmn4uNc"
-        test = "https://mega.nz/#!kIY0TY6Z!ZLEBPUD4qyWCtPHAtH4QwvgNlHlCj8KNJ1t0Xljf0x0"
+        PS3_Firmware_489 = ("wget https://archive.org/download/ps3-official-firmwares/Firmware%204.89/PS3UPDAT.PUP")
+        PS3_Firmware_488 = ("wget https://archive.org/download/ps3-official-firmwares/Firmware%204.88/PS3UPDAT.PUP")
+        PS3_Firmware_487 = ("wget https://archive.org/download/ps3-official-firmwares/Firmware%204.87/PS3UPDAT.PUP")
+        PS3_Firmware_486 = ("https://mega.nz/file/ldAliKJC#kh2Ja4kIPTnV-cxAQ1B-C-d_1FSRJn1HIvdPzmn4uNc")
+        PS3_Firmware_485 = ("https://mega.nz/#!kIY0TY6Z!ZLEBPUD4qyWCtPHAtH4QwvgNlHlCj8KNJ1t0Xljf0x0")
         PS3_Firmware_484 = ("https://mega.nz/#!YdA0DahB!m2Oe3x_xkpi_an7FJndors0lJTInwoz_tBc_9U54sAI")
-        PS3_Firmware_482 =("https://mega.co.nz/#!dIAgQA5D!HdV3Zxr5rEaNgt1agKssXQ-9TRH_WMYxCUOvWTbz2QA")
+        PS3_Firmware_482 = ("https://mega.co.nz/#!dIAgQA5D!HdV3Zxr5rEaNgt1agKssXQ-9TRH_WMYxCUOvWTbz2QA")
         PS3_Firmware_481 = ("https://mega.co.nz/#!lJ4TRYLL!74Oqm1WozDZ_lC7vC6-EzRJn06hwWo-nCTJQuUsN35k")
         PS3_Firmware_480 = ("https://mega.co.nz/#!MNo3UABS!xXttNkaI2MnNL3fvopGEuUQPLosmWHRuk-ev8XPde2Y")
         PS3_Firmware_478 = ("https://mega.co.nz/#!VBhzFIDQ!MWHVXDb5YmH7KqCAv6oAPRnniJ5vbZjNgCWMm5tvgBc")
@@ -18,7 +18,7 @@ class PS3:
         PS3_Firmware_470 = ("https://mega.co.nz/#!sEo3AYaR!JHHHRniwNbwyIh0_EPef-ixm-hAvig9dd79PpSudkKg")
         PS3_Firmware_466 = ("https://mega.co.nz/#!9IoDWYLR!-dfv7dS9IKGhi9CUpAiB7IvXaD6qk2RHim45RS5g634")
         PS3_Firmware_465 = ("https://mega.co.nz/#!kA5zzKrR!OmsMUXQn7jew8fJSlMMlIjS55N5P1qrvzOAaQKJurOQ")
-        PS3_Firmware_460 = "https://mega.co.nz/#!tdwFkSKQ!K8l7UmZJ9cCSO9ka_CRAxiOAncMGa9lfl8S8CIak_Xs"
+        PS3_Firmware_460 = ("https://mega.co.nz/#!tdwFkSKQ!K8l7UmZJ9cCSO9ka_CRAxiOAncMGa9lfl8S8CIak_Xs")
         PS3_Firmware_455 = ("https://mega.co.nz/#!VRwhBYrJ!DzFJyzvqqbExQks6_TSV4nZ9tFYezkdKWKgiddgwHZI") #16 start
         PS3_Firmware_453 = ("https://mega.co.nz/#!xNpBXAAS!bkBVJShilIwaGCnOE2yMH1VZBlF77lCpPIQzBjYdpO8")
         PS3_Firmware_450 = ("https://mega.co.nz/#!0QgzDAAT!Do1jOHdX6-NFyWz4h2U2uwIH370hA34ZMDjyAbKqk1E")
