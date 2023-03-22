@@ -9,10 +9,8 @@ print("Welcome to my Script this script install PS3 Firmware for WSL or Windows 
 print("PS3 Slim and supe slims can only install firmware that 3.75 or higher\n")
 print("PS3 Fat can install firmware 1.02-4.90\n")
 print("Also Make Sure you set your default browser if you dont do that whale it will open about a lot of cmd or Terminal\n")
-print("Make sure to not run as root or it wont work\n")
 
-def open_url(url):
-    webbrowser.open(url, new=2)
+
 
 path =  f"/home/{username}/Downloads"
 make = "mkdir PS3"
@@ -32,7 +30,7 @@ def first():
     if make:
         os.system(make)
     else:
-        os.chdir(make2)
+        os.system(make2)
     if path2:
         os.chdir(path2)
 
@@ -41,7 +39,13 @@ def first():
     else:
         os.system(make3)
     if path3:
-        os.system(path3)
+        os.chdir(path3)
+def root():
+    if os.geteuid() == 0:
+        print("Please run this script normal there no need for root")
+        exit()
+    else:
+        print("Setting the script Up")
 
 def menu_1():
     while True:
@@ -89,13 +93,13 @@ def menu_1():
         elif option == "12":
             open_url(PS3.PS3_Firmware_475)
         elif option == "13":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_470)
+            open_url(PS3.PS3_Firmware_470)
         elif option == "14":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_466)
+            open_url(PS3.PS3_Firmware_466)
         elif option == "15":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_465)
+            open_url(PS3.PS3_Firmware_465)
         elif option == "16":
-            webbrowser.open_new_tab(PS3.PS3_Firmware_460)
+            open_url(PS3.PS3_Firmware_460)
         elif option == "17":
             menu_2()
         elif option == "0":
@@ -124,37 +128,37 @@ def menu_2():
         print("[35] Back")
         option = input("Enter the PS3 firmware you want to install: ") #get input from user
         if option == "18":
-            PS3Firmware.webbrowser.open_new_tab(PS3_Firmware_455)
+            open_url(PS3_Firmware_455)
         elif option == "19":
-            PS3Firmware.webbrowser.open_new_tab(PS3_Firmware_453)
+            open_url(PS3.PS3_Firmware_453)
         elif option == "20":
-            PS3Firmware.webbrowser.open_new_tab(PS3_Firmware_450)
+            open_url(PS3.PS3_Firmware_450)
         elif option == "21":
-            PS3Firmware.webbrowser.open_new_tab(PS3_Firmware_446)
+            open_url(PS3.PS3_Firmware_446)
         elif option == "22":
-            PS3Firmware.webbrowser.open_new_tab(PS3_Firmware_445)
+            open_url(PS3.PS3_Firmware_445)
         elif option == "23":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_441)
+            open_url(PS3.PS3_Firmware_441)
         elif option == "24":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_440)
+            open_url(PS3.PS3_Firmware_440)
         elif option == "25":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_431)
+            open_url(PS3.PS3_Firmware_431)
         elif option == "26":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_430)
+            open_url(PS3.PS3_Firmware_430)
         elif option == "27":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_425)
+            open_url(PS3.PS3_Firmware_425)
         elif option == "28":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_421)
+            open_url(PS3.PS3_Firmware_421)
         elif option == "29":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_420)
+            open_url(PS3.PS3_Firmware_420)
         elif option == "30":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_411)
+            open_url(PS3.PS3_Firmware_411)
         elif option == "31":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_410)
+            open_url(PS3.PS3_Firmware_410)
         elif option == "32":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_400)
+            open_url(PS3.PS3_Firmware_400)
         elif option == "33":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_374)
+            open_url(PS3.PS3_Firmware_374)
         elif option == "34":
             menu_3()
         elif option == "35":
@@ -184,37 +188,37 @@ def menu_3():
         print("[53] Back")
         option = input("Enter the PS3 firmware you want to install: ") #get input from user
         if option == "36":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_373)
+            open_url(PS3.PS3_Firmware_373)
         elif option == "37":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_372)
+            open_url(PS3.PS3_Firmware_372)
         elif option == "38":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_370)
+            open_url(PS3.PS3_Firmware_370)
         elif option == "39":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_366)
+            open_url(PS3.PS3_Firmware_366)
         elif option == "40":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_365)
+            open_url(PS3.PS3_Firmware_365)
         elif option == "41":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_361)
+            open_url(PS3.PS3_Firmware_361)
         elif option == "42":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_360)
+            open_url(PS3.PS3_Firmware_360)
         elif option == "43":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_356_v2)
+            open_url(PS3.PS3_Firmware_356_v2)
         elif option == "44":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_356_v1)
+            open_url(PS3.PS3_Firmware_356_v1)
         elif option == "45":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_355)
+            open_url(PS3.PS3_Firmware_355)
         elif option == "46":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_350)
+            open_url(PS3.PS3_Firmware_350)
         elif option == "47":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_342)
+            open_url(PS3.PS3_Firmware_342)
         elif option == "48":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_341_v2)
+            open_url(PS3.PS3_Firmware_341_v2)
         elif option == "49":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_341_v1)
+            open_url(PS3.PS3_Firmware_341_v1)
         elif option == "50":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_340)
+            open_url(PS3.PS3_Firmware_340)
         elif option == "51":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_321)
+            open_url(PS3.PS3_Firmware_321)
         elif option == "52":
             menu_4()
         elif option == "53":
@@ -244,37 +248,37 @@ def menu_4():
         print("[71] Back")
         option = input("Enter the PS3 firmware you want to install: ") #get input from user
         if option == "54":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_316)
+            open_url(PS3.PS3_Firmware_316)
         elif option == "55":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_315)
+            open_url(PS3.PS3_Firmware_315)
         elif option == "56":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_310)
+            open_url(PS3.PS3_Firmware_310)
         elif option == "57":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_301)
+            open_url(PS3.PS3_Firmware_301)
         elif option == "58":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_300)
+            open_url(PS3.PS3_Firmware_300)
         elif option == "59":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_280)
+            open_url(PS3.PS3_Firmware_280)
         elif option == "60":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_276)
+            open_url(PS3.PS3_Firmware_276)
         elif option == "61":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_270)
+            open_url(PS3.PS3_Firmware_270)
         elif option == "62":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_260)
+            open_url(PS3.PS3_Firmware_260)
         elif option == "63":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_253)
+            open_url(PS3.PS3_Firmware_253)
         elif option == "64":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_252)
+            open_url(PS3.PS3_Firmware_252)
         elif option == "65":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_250)
+            open_url(PS3.PS3_Firmware_250)
         elif option == "66":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_243)
+            open_url(PS3.PS3_Firmware_243)
         elif option == "67":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_242)
+            open_url(PS3.PS3_Firmware_242)
         elif option == "68":
-            PS3_Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_241)
+            open_url(PS3.PS3_Firmware_241)
         elif option == "69":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3.PS3_Firmware_240)
+            open_url(PS3.PS3_Firmware_240)
         elif option == "70":
             menu_5()
         elif option == "71":
@@ -304,37 +308,37 @@ def menu_5():
         print("[89] Back")
         option = input("Enter the PS3 firmware you want to install: ") #get input from user
         if option == "72":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_236)
+            open_url(PS3.PS3_Firmware_236)
         elif option == "73":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_235)
+            open_url(PS3.PS3_Firmware_235)
         elif option == "74":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_230)
+            open_url(PS3.PS3_Firmware_230)
         elif option == "75":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_220)
+            open_url(PS3.PS3_Firmware_220)
         elif option == "76":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_217)
+            open_url(PS3.PS3_Firmware_217)
         elif option == "77":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_216)
+            open_url(PS3.PS3_Firmware_216)
         elif option == "78":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_210)
+            open_url(PS3.PS3_Firmware_210)
         elif option == "79":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_201)
+            open_url(PS3.PS3_Firmware_201)
         elif option == "80":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_200)
+            open_url(PS3.PS3_Firmware_200)
         elif option == "81":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_194)
+            open_url(PS3.PS3_Firmware_194)
         elif option == "82":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_193)
+            open_url(PS3.PS3_Firmware_193)
         elif option == "83":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_192)
+            open_url(PS3.PS3_Firmware_192)
         elif option == "84":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_190)
+            open_url(PS3.PS3_Firmware_190)
         elif option == "85":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_182)
+            open_url(PS3.PS3_Firmware_182)
         elif option == "86":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_181)
+            open_url(PS3.PS3_Firmware_181)
         elif option == "87":
-            webbrowser.open_new_tab(PS3.PS3_Firmware_180)
+            open_url(PS3.PS3_Firmware_180)
         elif option == "88":
             menu_6()
         elif option == "89":
@@ -357,36 +361,40 @@ def menu_6():
         print("[100] Back")
         option = input("Enter the PS3 firmware you want to install: ") #get input from user
         if option == "90":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_170)
+            open_url(PS3.PS3_Firmware_170)
         elif option == "91":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_160)
+            open_url(PS3.PS3_Firmware_160)
         elif option == "92":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_154)
+            open_url(PS3.PS3_Firmware_154)
         elif option == "93":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_151)
+            open_url(PS3.PS3_Firmware_151)
         elif option == "94":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_150)
+            open_url(PS3.PS3_Firmware_150)
         elif option == "95":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_132)
+            open_url(PS3.PS3_Firmware_132)
         elif option == "96":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_130)
+            open_url(PS3.PS3_Firmware_130)
         elif option == "97":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_111)
+            open_url(PS3.PS3_Firmware_111)
         elif option == "98":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3_Firmware_110)
+            open_url(PS3.PS3_Firmware_110)
         elif option == "99":
-            PS3Firmware.webbrowser.open_new_tab(PS3.PS3Firmware.PS3.PS3_Firmware_102)
+            open_url(PS3.PS3_Firmware_102)
         elif option == "100":
             menu_5()
         else:
             print("Invalid option")
+
 def credit():
     print("Script By TigerClips1\n")
     print("I will now force your Computer to open a link to my github my twitter and my kofi\n")
-    print("ps4linux.com\n")
     open_url("https://ko-fi.com/tigerclips1")
     open_url("https://twitter.com/TugerClips1")
     open_url("https://github.com/TigerClips1")
+
+def open_url(url):
+    webbrowser.open(url, new=2)
+root()
 first()
 menu_1()
 credit()
