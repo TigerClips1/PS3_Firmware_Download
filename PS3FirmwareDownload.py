@@ -1,9 +1,15 @@
 #!/usr/bin/env python3
-from PS3Firmwares.PS3Firmware import PS3
+
+#import all important modulus
+
+from PS3Firmwares.PS3Firmware import PS3 #this import the PS3 class in PS3Firmwares.py
 import os
 import webbrowser
 
+#input from user
 username = input("Please Enter your linux or Windows User name: ")
+
+#this print text on the screen when the script run
 
 print("Welcome to my Script this script install PS3 Firmware for WSL or Windows or Linux\n")
 print("PS3 Slim and supe slims can only install firmware that 3.75 or higher\n")
@@ -11,7 +17,7 @@ print("PS3 Fat can install firmware 1.02-4.90\n")
 print("Also Make Sure you set your default browser if you dont do that whale it will open about a lot of cmd or Terminal\n")
 
 
-
+#variables
 path =  f"/home/{username}/Downloads"
 make = "mkdir PS3"
 make4 = f"mkdir UPDATE"
@@ -21,7 +27,9 @@ make3 = "md UPDATE"
 path3 = "UPDATE"
 path4 = f"c:/USER/{username}/Downloads/"
 
+#Function
 def first():
+    #set everything up that create a PS3/UPDATE folder in the download Directory
     if path:
         os.chdir(path)
     else:
@@ -40,15 +48,19 @@ def first():
         os.system(make3)
     if path3:
         os.chdir(path3)
+
+#fell safe let the user know to not run this as root
 def root():
     if os.geteuid() == 0:
         print("Please run this script normal there no need for root")
         exit()
     else:
-        print("Setting the script Up")
+        print("Setting the script Up\n")
+#this make menu 1 there 6 menu in this script
 
 def menu_1():
     while True:
+        #print the menu option on screen in this function
         print("[1] PS3_Firmware_489")
         print("[2] PS3_Firmware_488")
         print("[3] PS3_Firmware_487")
@@ -68,6 +80,7 @@ def menu_1():
         print("[17] Next page 1/6")
         print("[0] Exit")
         option = input("Enter the PS3 firmware you want to install: ") #get input from user
+        #this will make the menu execute these variables from the class in PS3Firmwares.py
         if option == "1":
             os.system(PS3.PS3_Firmware_489)
         elif option == "2":
@@ -102,11 +115,15 @@ def menu_1():
             open_url(PS3.PS3_Firmware_460)
         elif option == "17":
             menu_2()
+        #this will break out of the loop once the user type 0 on there keyboard
         elif option == "0":
             break
+        #print error on the screen if the user enter anything else then numbers
         else:
             print("Invalid option")
+            menu_1()
 def menu_2():
+    #print the menu option on screen in this function
     while True:
         print("[18] PS3_Firmware_455")
         print("[19] PS3_Firmware_453")
@@ -127,6 +144,7 @@ def menu_2():
         print("[34] Next page 2/6")
         print("[35] Back")
         option = input("Enter the PS3 firmware you want to install: ") #get input from user
+        #this will make the menu execute these variables from the class in PS3Firmwares.py
         if option == "18":
             open_url(PS3_Firmware_455)
         elif option == "19":
@@ -165,8 +183,10 @@ def menu_2():
             menu_1()
         else:
             print("Invalid option")
+            menu_2()
 
 def menu_3():
+    #print the menu option on screen in this function
     while True:
         print("[36] PS3_Firmware_373")
         print("[37] PS3_Firmware_372")
@@ -187,6 +207,7 @@ def menu_3():
         print("[52] Next page 3/6")
         print("[53] Back")
         option = input("Enter the PS3 firmware you want to install: ") #get input from user
+        #this will make the menu execute these variables from the class in PS3Firmwares.py
         if option == "36":
             open_url(PS3.PS3_Firmware_373)
         elif option == "37":
@@ -225,8 +246,10 @@ def menu_3():
             menu_2()
         else:
             print("Invalid option")
+            menu_3()
 
 def menu_4():
+    #print the menu option on screen in this function
     while True:
         print("[54] PS3_Firmware_316")
         print("[55] PS3_Firmware_315")
@@ -247,6 +270,7 @@ def menu_4():
         print("[70] Next page 4/6")
         print("[71] Back")
         option = input("Enter the PS3 firmware you want to install: ") #get input from user
+        #this will make the menu execute these variables from the class in PS3Firmwares.py
         if option == "54":
             open_url(PS3.PS3_Firmware_316)
         elif option == "55":
@@ -285,9 +309,11 @@ def menu_4():
             menu_3()
         else:
             print("Invalid option")
+            menu_4()
 
 def menu_5():
     while True:
+        #print the menu option on screen in this function
         print("[72] PS3_Firmware_236")
         print("[73] PS3_Firmware_235")
         print("[74] PS3_Firmware_230")
@@ -307,6 +333,7 @@ def menu_5():
         print("[88] Next page 5/6")
         print("[89] Back")
         option = input("Enter the PS3 firmware you want to install: ") #get input from user
+        #this will make the menu execute these variables from the class in PS3Firmwares.py
         if option == "72":
             open_url(PS3.PS3_Firmware_236)
         elif option == "73":
@@ -345,8 +372,10 @@ def menu_5():
             menu_4()
         else:
             print("Invalid option")
+            menu_5()
 
 def menu_6():
+    #print the menu option on screen in this function
     while True:
         print("[90] PS3_Firmware_170")
         print("[91] PS3_Firmware_160")
@@ -360,6 +389,7 @@ def menu_6():
         print("[99] PS3_Firmware_102")
         print("[100] Back")
         option = input("Enter the PS3 firmware you want to install: ") #get input from user
+        #this will make the menu execute these variables from the class in PS3Firmwares.py
         if option == "90":
             open_url(PS3.PS3_Firmware_170)
         elif option == "91":
@@ -384,16 +414,22 @@ def menu_6():
             menu_5()
         else:
             print("Invalid option")
+            menu_6()
 
 def credit():
+    #credit the Auther
     print("Script By TigerClips1\n")
     print("I will now force your Computer to open a link to my github my twitter and my kofi\n")
+    #open link to my github/Twitter/Kofi
     open_url("https://ko-fi.com/tigerclips1")
     open_url("https://twitter.com/TugerClips1")
     open_url("https://github.com/TigerClips1")
 
 def open_url(url):
+    #change to open_url to the code wont be a mass
     webbrowser.open(url, new=2)
+
+#call all the function
 root()
 first()
 menu_1()
