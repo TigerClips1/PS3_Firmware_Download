@@ -5,7 +5,7 @@ import webbrowser
 #class keep thing nice and easy
 class PS3:
         #all PS3Firmware that 4.89-1.02 4.89-1q.02 md5 hash are  in PS3FIremawreHash.txt
-
+        #Copyright Sony Entreatment © 1995-2023 All Rights Reserved
         PS3_Firmware_489 = ("wget https://archive.org/download/ps3-official-firmwares/Firmware%204.89/PS3UPDAT.PUP")
         PS3_Firmware_488 = ("wget https://archive.org/download/ps3-official-firmwares/Firmware%204.88/PS3UPDAT.PUP")
         PS3_Firmware_487 = ("wget https://archive.org/download/ps3-official-firmwares/Firmware%204.87/PS3UPDAT.PUP")

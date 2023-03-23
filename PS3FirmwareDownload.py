@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 
-#import all important modulus
+#Copyright TigerClips1 © 2023 All Rights Reserved
 
+#import all important modulus
 from PS3Firmwares.PS3Firmware import PS3 #this import the PS3 class in PS3Firmwares.py
 import os
 import webbrowser
