@@ -10,7 +10,7 @@ Copyright TigerClips1 © 2023 All Rights Reserved
 
 ## Site ##
 
-[here](https://darthsternie.net/ps3-firmwares/) - so the firmware and hash
+[here](https://darthsternie.net/ps3-firmwares/) -   Firmware And MD5 Hash
 
 [MD51](https://darthsternie.net/ps3-firmwares/) - hash from the site
 
